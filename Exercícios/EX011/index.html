@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+  <p>tente abrir esse site em vários dispositivos diferentes ou simplismente aumente e diminua o tamanho do seu navegador.
+  </p>
+  
+  <picture>
+      <source media="(max-width: 750px)" srcset="imagens/P.png" type="image/png">
+      <source media="(max-width: 1050px)" srcset="imagens/M.png" type="image/png">
+     <img src="imagens/G.png" alt="imagem flexivel"><!-- sempre começar por uma imagem base, a maior, e dela criar as demais com seus tamanhos, da base a menor, esta ordem tem que ser obdecida se nao, nao ira funcionar-->
+  </picture>
+
+  <h1>Reproduzindo audio</h1>
+  <p>Vamos aprender a reproduzir audio em HTML5</p>
+  <audio src="midia/EMPRESS WILL ALWAYS RETURN!.mp3" controls autoplay></audio>
+  <audio preload="metadata" autoplay controls loop>
+    <source src="midia/EMPRESS WILL ALWAYS RETURN!.mp3" type="audio/mp3">
+    <source src="midia/EMPRESS WILL ALWAYS RETURN!.ogg" type="audio/agg">
+    <source src="midia/EMPRESS WILL ALWAYS RETURN!.wav" type="audio/wav">
+    <p>infelizmente seu navegado nao consegue reproduzir audio <a href="midia/EMPRESS WILL ALWAYS RETURN!.mp3">Clique Aqui</a>para baixar o arquivo mp3</p>
+  </audio>
+</body>
+</html>
