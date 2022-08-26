@@ -8,18 +8,25 @@
     <style>
         body {
             height: 100vh;
-            background-color: black;
+            /*background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-repeat: no-repeat;
             background-position: center center;
             background-size: cover;
+            background-attachment: fixed;*/
 
+            /* Shorthand - background
+            color > image > position > repeat > [size] > attachment
+            (background-size nao esta funcionando no shorthand)
+            */
 
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+            background-size: cover;
         }
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -32,6 +39,26 @@
         <h1>Teste de Imagens de Fundo</h1>
         <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero inventore voluptate, provident sapiente molestias architecto vel nulla ipsum debitis! Laborum molestiae sapiente, explicabo repellendus veniam optio exercitationem recusandae fuga eum?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, corrupti. Aspernatur minima autem exercitationem, et a laborum veniam eveniet veritatis nobis non, dolorem repellat, corporis nostrum modi nemo porro sit!Lorem
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. A ipsam quisquam enim rem similique. Perspiciatis laboriosam necessitatibus quas quod consectetur. Quibusdam nam soluta eveniet ipsum consectetur non corporis laudantium quidem?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam blanditiis quis suscipit quisquam quidem rerum sit expedita inventore possimus doloribus explicabo est nostrum cupiditate in, eligendi fuga animi eveniet optio.
+
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus voluptatum itaque praesentium modi officiis, laboriosam explicabo blanditiis aspernatur iure. Deserunt ex nam nobis at sint accusantium excepturi sed qui quia.
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero inventore voluptate, provident sapiente molestias architecto vel nulla ipsum debitis! Laborum molestiae sapiente, explicabo repellendus veniam optio exercitationem recusandae fuga eum?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, corrupti. Aspernatur minima autem exercitationem, et a laborum veniam eveniet veritatis nobis non, dolorem repellat, corporis nostrum modi nemo porro sit!Lorem
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. A ipsam quisquam enim rem similique. Perspiciatis laboriosam necessitatibus quas quod consectetur. Quibusdam nam soluta eveniet ipsum consectetur non corporis laudantium quidem?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam blanditiis quis suscipit quisquam quidem rerum sit expedita inventore possimus doloribus explicabo est nostrum cupiditate in, eligendi fuga animi eveniet optio.
+
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus voluptatum itaque praesentium modi officiis, laboriosam explicabo blanditiis aspernatur iure. Deserunt ex nam nobis at sint accusantium excepturi sed qui quia.
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero inventore voluptate, provident sapiente molestias architecto vel nulla ipsum debitis! Laborum molestiae sapiente, explicabo repellendus veniam optio exercitationem recusandae fuga eum?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, corrupti. Aspernatur minima autem exercitationem, et a laborum veniam eveniet veritatis nobis non, dolorem repellat, corporis nostrum modi nemo porro sit!Lorem
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. A ipsam quisquam enim rem similique. Perspiciatis laboriosam necessitatibus quas quod consectetur. Quibusdam nam soluta eveniet ipsum consectetur non corporis laudantium quidem?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam blanditiis quis suscipit quisquam quidem rerum sit expedita inventore possimus doloribus explicabo est nostrum cupiditate in, eligendi fuga animi eveniet optio.
+
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus voluptatum itaque praesentium modi officiis, laboriosam explicabo blanditiis aspernatur iure. Deserunt ex nam nobis at sint accusantium excepturi sed qui quia.
         </p>
     </main>
 </body>
