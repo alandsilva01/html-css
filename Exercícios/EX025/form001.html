@@ -5,29 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
 </head>
 <body>
-    <h1>Checkbox e Rádio</h1>
-    <form action="cadastro.php" autocomplete="on">
-        <fieldset>
-            <legend>Sexo</legend>
-            <input type="radio" name="sexo" id="isxmas" value="M"> <label for="isxmas">Masculino</label>
-            <input type="radio" name="sexo" id="isxfem" value="F"> <label for="isxfem">Feminino</label>
-            <!--ao colocar o mesmo 'name' no radio ele varia na seleção de opção e nao nos permite selecionar os dois, como por exemplo marcar mas. e fem. ou um ou outro-->
-        </fieldset>
-        <fieldset>
-            <!--podemos deixar por padrão um radio ou check marcado, e o usuario alterar posteriormente, para isso usamos 'checked'-->
-            <legend>Esportes Favoritos</legend>
-            <input type="checkbox" name="esbas" id="iesbas"> <label for="iesbas">Basquete</label> <br>
-            <input type="checkbox" name="esfut" id="iesfut"> <label for="iesfut">Futebol</label> <br>
-            <input type="checkbox" name="esnat" id="iesnat"> <label for="iesnat">Natação</label> <br>
-            <input type="checkbox" name="esten" id="iesten"> <label for="iesten">Tênis</label> <br>
-        </fieldset>
-
-        <p>
-            <input type="submit" value="Enviar">
-            <input type="resert" value="Limpar">
-        </p>
+    <h1>Meu Primeiro Formulário</h1>
+    <form action="cadastro.php" method="post">
+        <p><label for="inome">Nome:</label>
+             <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome:</label>
+             <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="Enviar"></p>
     </form>
 </body>
 </html>
