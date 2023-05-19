@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            background-color: cornflowerblue;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        section{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 80vh;
+        }
+
+        fieldset {
+            padding: 20px;
+            min-width: 300px;
+            border: 1px solid rgb(57, 110, 209);
+            border-radius: 20px;
+        }
+
+        form {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        form div {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 30px;
+        }
+
+        form input, form textarea {
+            outline: unset;
+            padding: 20px;
+            min-width: 300px;
+            border: 1px solid cornflowerblue;
+            border-radius: 20px;
+        }
+
+        form input:focus, form textarea:focus {
+            background-color: rgb(225, 230, 238);
+        }
+
+        form input[type=submit] {
+            background-color: cornflowerblue;
+            color: white;
+            cursor: pointer;
+        }
+
+        form label {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Formulário de Contato</h1>
+    </header>
+    <section>
+        <fieldset>
+            <legend>Ente em Contato</legend>
+            <form>
+            
+                    <div>
+                        <label for="inome">Nome:</label>
+                         <input type="text" placeholder="Digite seu nome" name="nome" id="inome" required>
+                    </div>
+                    <div>
+                        <label for="itel">Telefone: </label>
+                         <input type="tel" placeholder="Digite seu telefone" name="telefone" id="itel" required>
+                    </div>
+                    <div>
+                        <label for="iemail">E-Mail: </label>
+                        <input type="email" placeholder="Digite seu email" name="email" id="Iemail" required>
+                    </div>
+                    <div>
+                        <label for="imens">Mensagem: </label>
+                        <textarea name="msg" id="imens" rows="10"></textarea>
+                    </div>
+                    <div>
+                        <input type="submit" value="Enviar" id="button">
+                    </div>
+                            </form>
+        </fieldset>
+    </section>
+    <script>
+
+    </script>
+</body>
+</html>
